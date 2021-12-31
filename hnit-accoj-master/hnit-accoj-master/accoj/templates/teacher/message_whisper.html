@@ -1,0 +1,48 @@
+{% extends 'teacher/teacher-base.html' %}
+{% block page_title %}我的消息{% endblock %}
+{% block page_title_li %}我的消息{% endblock %}
+{% block content %}
+    <div class="animated fadeIn">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <strong class="card-title">我的消息</strong>
+                    </div>
+                    <div class="card-body">
+                        <div class="msg">
+                            <div class="friend-list">
+                                <div class="title">
+                                    班级
+                                </div>
+                                <div id="room-list" class="list">
+                                </div>
+                            </div>
+                            <div class="friend-message">
+                                <div id="room-name" class="title">
+
+                                </div>
+                                <div id="message-box" class="message-box">
+
+                                </div>
+                                <div class="send-box">
+                                    <textarea id="message-content" placeholder="输入消息..."></textarea>
+                                    <div>
+                                        <div>
+                                            <span id="now-words">0</span>
+                                            <span>/</span>
+                                            <span>200</span>
+                                        </div>
+                                        <button data-send-message>发送</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="http://cdn.accoj.top/static/accoj-1.0.0/message_whisper.css">
+    <script src="{{ url_for('static', filename='js/message_whisper.js') }}"></script>
+{% endblock %}

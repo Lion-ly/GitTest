@@ -1,0 +1,32 @@
+{% extends 'profile/profile-base.html' %}
+{% block page_title %}系统通知{% endblock %}
+{% block page_title_li %}系统通知{% endblock %}
+{% block content %}
+    <div class="animated fadeIn">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <strong class="card-title">系统通知</strong>
+                    </div>
+                    <div class="card-body">
+                        <div class="msg">
+                            <div class="friend-message">
+                                <div class="title">
+                                    系统通知
+                                </div>
+                                <div data-message-box class="message-box">
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="http://cdn.accoj.top/static/accoj-1.0.0/message_whisper.css">
+    <script src="http://cdn.accoj.top/static/accoj-1.0.0/message_system.js"></script>
+
+{% endblock %}
